@@ -1,144 +1,196 @@
 ---
 layout: default
 ---
-{% include header4.html %}
+{% include header2.html %}
 <div class="container">
-    <div class="rightsided-container">
-        <style scoped>
-            @media screen and (min-width: 700px) {
-                .rightsided-container {
-                    margin-left: 240px;
-                    position: relative;
-                    z-index: 3;
-                }
-            }
-            .rightsided-container .content {
-                background: #ecf0f1;
-                text-align: left;
-                box-sizing: border-box;
-                padding: 17px 60px 150px 40px;
-                font-size: 1.18em;
-                line-height: 1.42em;
-            }
-            .rightsided-container .content .date {
-                font-size: 0.8em;
-            }
-            .rightsided-container header {
-                padding: 10px 40px 0;
-                color: white;
-                text-align: left;
-                margin-bottom: 17px;
-                background: rgba(44, 62, 80,1.0);
-            }
-            @media screen and (min-width: 700px) {
-                .rightsided-container header {
-                    margin-top: 125px;
-                    background: none;
-                }
-            }
-            .rightsided-container h5 {
-                font-size: 0.9em;
-                margin: 0;
-                margin-bottom: -15px;
-                padding-left: 10px;
-            }
-            .rightsided-container h1 {
-                font-weight: 200;
-                font-size: 3.5em;
-                margin: 0;
-            }
-            .rightsided-container h2 {
-                margin-bottom: 0;
-            }
-            .rightsided-container p {
-                margin-top: 0;
-                margin-bottom: 1em;
-            }
-        </style>
-        <header>
-            <h5>what we have done</h5>
-            <h1>Case: Mærkelex</h1>
-        </header>
-        <section class="content">
-            <p class="date"><em>Launched: February 2016</em></p>
-            <p>
-                Mærkelex is an index of scout badges available to scouts in Denmark, as well as a brand we hope to build into the place to go for badge-related things for Danish scouts.
-            </p>
-            <p>
-                The idea was first a way of scratching our own itch:
-                no central site existed for looking up scout badges, and as scout leaders this was a problem.
-                Each scout association would have its own index of badges, but unofficial badges — badges designed by individual scouts as a way to package a concept — were only listed in a private Facebook group.
-            </p>
-            <p>
-                In other words: this market was a blue ocean (no competitors), and if we were right that there was a need for this central index our product would very likely be a success.
-                The total market size was very small (scout badges in Denmark is a very specific niche), so in rough competition success would be hard to attain.
-            </p>
-            <h2>Testing the product hypothesis</h2>
-            <p>
-                Before we invested lots and lots of energy into the product we needed to know that it would be used, so we built a quick prototype in around a week's part time work.
-                It listed badges and pretty much nothing else.
-                And it was well-received, with many visitors in the first few days and positive feedback.
-            </p>
-            <p>
-                In order to facilitate quick iteration, we broke the problem down to its core and picked a technology based on this.
-                We never pick a <em>default platform</em>, we pick the best platform for the problem.
-                In our case, we could make do with statically hosted files, implementing search entirely in the frontend.
-                We effectively got free hosting from Github Pages (they host Jekyll sites for free), and didn't have to compromise on quality to get this.
-            </p>
-            <p>
-                In fact, we've come to believe that static pages are often more than good enough for projects, and static page sites have the advantage of being much faster than sites that rely on database access for every request.
-            </p>
-            <h2>User friendliness</h2>
-            <p>
-                The first version of the website was responsive, although the desktop version of the site was the one we built first.
-                We quickly noticed that many of our visitors (more than 60%) were on mobile devices.
-                This prompted us to focus on optimizing the user experience for mobile.
-            </p>
-            <p>
-                This started us on the habit of extensive user testing, where we would ask users to use the website from various devices.
-                One of the most important things when doing usability tests is to set up vague tasks to complete and never guide users on how to complete them.
-                For example, we would never tell them to "click that badge", but rather give tasks like "try to find a badge that has to do with knives".
-                These tests helped us solidify the core user experience of looking up badges and searching.
-            </p>
-            <p>
-                Because so many of our user were on mobile devices we also optimized the site for shoddy, inconsistent and slow connections.
-                The first request for the site is very quick, and we make sure the search function buffers input even before the search data is loaded.
-                This makes the site more resilient to situations where users move in and out of mobile network coverage.
-            </p>
-            <p>
-                In other words we looked at who our actual users were and optimized for them.
-                We involved real users in the development process from day one.
-            </p>
-            <h2>Statistics</h2>
-            <p>
-                Generally, Mærkelex has done well.
-                We now have more than 1000 unique users and 10.000 page views every 30 days, whether or not we do any marketing.
-            </p>
-            <p>
-                We are ranked number one on Google for relevant search terms such as "spejdermærke" or "spejdermærker".
-                For certain badges, our page with the badge description even shows up before the official badge website.
-            </p>
-            <p>
-                It felt great when people we didn't know started sharing links to the site in scout badge related forums which we frequented.
-                Our product had become popular enough that strangers would advertise for it!
-            </p>
-        </section>
-    </div>
+    <header>
+        <h1>what we have done</h1>
+    </header>
 </div>
-<style scoped>
-footer {
-    background: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: left;
-    display: block;
-    max-width: 450px;
-}
-footer a {
-    color: inherit;
-}
+<div class="container">
+    <section class="intro">
+        <p>deranged is a very young company, made up of a strong team of engineers with a desire to do things differently.</p>
+        <p>
+            Elsewhere on this website you can read about <a href='/how-we-think/'>how we think</a> and what we offer as a company.
+            These cases provide concrete examples of the work we have done, and how, more concretely, we work with customers within their business demands and constraints.
+        </p>
+    </section>
+</div>
+<div class="case-summaries">
+    <div class="case-summary">
+        <img src="../img/maerkelex2.jpg" alt="maerkelex image">
+        <div class="summary-text">
+            <h1>Mærkelex</h1>
+            <p class="case-summary-preview-text">For Mærkelex, we built a highly scalable and cost-aware platform and webshop, bootstrapping a niche business. Efficient software doesn’t have to be expensive.</p>
+            <p>Mærkelex is a niche web shop selling scout badges designed by and for scouts in Denmark. Mærkelex design some scout badges, and license popular badges from other designers to sell directly on the platform. On top of being just a webshop it is also the go-to platform for discovering scout badges, including many that are not sold directly on the platform.</p>
+            <p>It was important for Mærkelex to get up and running on a minimal budget and with minimal recurring expenses, as the market for scout badges is limited in size.</p>
+            <p>We built a highly scalable website with a clear brand, and a webshop as a separate component, ensuring that the scalability of the two are disconnected. That means that traffic can increase on the platform without significantly increasing infrastructure costs, and sales specific traffic will pay for any potential increases in infrastructure cost for the webshop.</p>
+        </div>
+    </div>
+    <div class="case-summary">
+        <img src="../img/klikkit2.jpg" alt="klikkit image">
+        <div class="summary-text">
+            <h1>Klikkit</h1>
+            <p class="case-summary-preview-text">For The HabLab, we took over an existing backend system, improved stability and scalability, ensured adherence to legal requirements, and constructed a web application for interacting with the system.</p>
+            <p> "It has been a pleasure working with a proactive contracter such as deranged. With their technical capacity, they enable the necessary overview and execute quickly."
+            — Morten Schnack, CTO, The HabLab </p>
+            <p>Klikkit is a product built by The HabLab, a startup springing from LEO Innovation Lab. LEO Innovation Lab was started with the goal of making every step of skin disease treatment easier, and Klikkit is a product that focuses on keeping patients on track with their medication.</p>
+            <p>The product has broader implications than just in skin disease treatment, covering any kind of patient medication management.</p>
+            <p>We joined Klikkit to help make their backend system ready for pilots. They had an existing system that needed assessing and shining up, before being deployed. We worked closely with the rest of their team, integrating with their technical team to make the best decisions for the whole business.</p>
+            <p>We brought the entire system to the cloud, running it on Docker and Kubernetes, and ensured living up to legal requirements (specifically those of HIPAA and GDPR) such as regular backups and auditability. We ensured that the system was more stable and scalable by automating testing, and setting up advanced logging and monitoring, and ensuring geographic distribution.</p>
+            <p>Finally, we developed a web interface for carers of patients to interact with the system, providing live, actionable data as needed.</p>
+            <p>Most importantly, throughout the entire process, we worked closely with the business, being steered by business objectives and goals, and making sure we put their money to the best possible use.</p>
+        </div>
+    </div>
+    <div class="case-summary">
+        <img src="../img/coen-van-den-broek-1139524-unsplash.jpg" alt="on-demand service image">
+        <div class="summary-text">
+            <h1>An on-demand economy service</h1>
+            <p class="case-summary-preview-text">For an on-demand service we took over from a previous team of developers, maintaining the platform and developing a few new features.</p>
+            <p>The service provides an interface for looking up a service to be provided on-demand. The budget for the project was fairly limited and based entirely on incoming funds.</p>
+            <p>We adjusted to the budget and business situation and helped bring the business forward at a sustainable pace.</p>
+            <p>We also helped make strategic plans for improving cash flow through expansion of the business and business opportunities, leveraging the company’s existing platform to move into other markets.</p>
+        </div>
+    </div>
+    <div class="fade"></div>
+</div>
+
+<script>
+
+    var nodeList = document.querySelectorAll(".case-summary");
+    var cases = Array.prototype.map.call(nodeList, function(caseNode) {
+        return {
+            element: caseNode,
+            state: {
+                expanded: false
+            }
+        }
+    });
+
+    var fade = document.querySelector(".fade");
+    fade.addEventListener("click", function() {
+        expandedSummary = cases.find(x => x.state.expanded);
+        if(!expandedSummary) {
+            //something is super wrong
+            return;
+        }
+        closeSummary(expandedSummary, this);
+    });
+
+    var spaceElement = document.createElement("div");
+    spaceElement.classList.add("case-summary");
+    spaceElement.setAttribute('id', "space");
+    spaceElement.style.visibility = "hidden";
+
+    cases.forEach(function(c) {
+        c.element.addEventListener("click", function() {
+            if(c.state.expanded) {
+                closeSummary(c, fade);
+            }
+            else {
+                expandSummary(c, fade);
+            }
+<<<<<<< HEAD
+        })
+    });
+
+    function closeSummary(expandedCase, fade) {
+        expandedCase.element.classList.remove("case-summary-expanded");
+        var space = document.getElementById("space");
+        space.parentNode.removeChild(space);
+        expandedCase.state.expanded = false;
+        fade.style.display = "none";
+    }
+
+    function expandSummary(c, fade) {
+        c.element.classList.add("case-summary-expanded");
+        c.state.expanded = true;
+        fade.style.display = "block";
+        c.element.parentNode.insertBefore(spaceElement, c.element);
+    }
+</script>
+
+<style>
+    .container {
+        max-width: 1000;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .intro {
+        text-align: center;
+        padding: 0 8px;
+    }
+
+    .case-summaries {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+
+    .case-summary {
+        margin: 10px;
+        width:0;
+        flex-grow: 1;
+        text-align: left;
+        background: white;
+        box-shadow: 0 0 4px rgba(0,0,0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        min-width: 250px;
+        overflow: visible;
+    }
+
+    .case-summary h1 {
+        font-size: 1.6em;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .case-summary p {
+        padding: 0 15px;
+    }
+
+    .case-summary:not(.case-summary-expanded) p:not(.case-summary-preview-text) {
+        display: none;
+    }
+
+    .case-summaries .case-summary img {
+        width:100%;
+        height: 20vw;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .case-summary-expanded {
+        position: fixed;
+        width: 650px;
+        top: 85px;
+        left: calc((100vw - 650px) / 2);
+        z-index: 300;
+        height: 80vh;
+        overflow-y: auto;
+        box-shadow: 0 0 90px rgba(0,0,0, 0.2), 10px 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .case-summary-expanded .summary-text {
+        padding: 0 20px;
+    }
+
+    .fade {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 200;
+        display: none;
+    }
 </style>
-<footer>
-    &copy; deranged 2018-2019. CVR 35695583.
-    <a href="/privacy/">Privacy policy</a>.
-</footer>
